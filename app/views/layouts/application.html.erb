@@ -25,12 +25,16 @@
 </div>
 
 <a class="navbar-brand" href="#">
-   <%= image_tag "logo_white.png", alt: "Tinstuk Logo", class: "logo-brand" %>
+   <%= image_tag "logo_white.png", alt: "Dating4cause Logo", class: "logo-brand" %>
 </a>
 
-
-
 <%= yield %>
+
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
 
 </body>
 </html>
