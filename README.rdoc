@@ -1,4 +1,8 @@
 == README
+FACEBOOK
+APP ID: 1676282429277458
+APP SECRET: f890ef30be20fe20394f44ec7d7c7733
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
