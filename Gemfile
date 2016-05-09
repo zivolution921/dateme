@@ -53,3 +53,7 @@ gem "font-awesome-rails"
 
 gem "font-awesome-sass"
 
+gem 'omniauth-facebook'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
