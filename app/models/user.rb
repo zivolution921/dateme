@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
     find_by(provider: auth['provider'], uid: auth['uid']) || create_user_from_omniauth(auth)
   end
 
-  def self.create_user_from_facebook(auth)
+  def self.create_user_from_omniauth(auth)
     create(
 
       email: auth['info']['email'],
