@@ -1,13 +1,21 @@
 Rails.application.routes.draw do
+  
   root 'home#index'
-  resources :users do 
-    member do 
+  
+  resources :users do
+    member do
       get 'profile'
       get 'matches'
     end
   end
+  
+  get   'auth/facebook/callback', to: "sessions#create"
+  match '/sign_out', to: "sessions#destroy", via: :delete
 
-    get 'auth/:provider/callback', to: 'sessions#create'
+  post   'create_friendship' => "friendships#create"
+  delete 'delete_friendship' => "friendships#destroy"
+
+  get 'matches/get_email' => "users#get_email"
     
   # get 'users/index'
 
